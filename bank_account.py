@@ -21,6 +21,7 @@ class BankAccount:
     def get_balance(self):
         print(f"Текущий баланс: {self.__balance} руб.\n")
 
+
 def check_balance(account):
     account.get_balance()
 
@@ -65,6 +66,7 @@ def bank_menu(account):
             action(account)
         else:
             print("Некорректный выбор. Попробуйте снова.\n")
+
 
 if __name__ == "__main__":
     user_account = BankAccount()
